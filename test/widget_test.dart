@@ -114,6 +114,18 @@ print("Conditional");
   mahasiswafk = "beben";
   
   print(mahasiswafk);
+
+  //null safety
+  // ? ! late
+  // ? digunakan dia boleh nul
+  // String? jurusan;
+  // untuk di isi nanti
+  late String jurusanns;
+  
+  jurusanns = "Teknik Informatika";
+  // jurusan = "TI";
+  //  memaksa untuk di jalankan / yakin ada datanya
+  print(jurusanns.length);
 }
 //Function
   hitungNilai(){
