@@ -93,4 +93,49 @@ print("Conditional");
 
   print("---------");
   nilai >= 80 ? print("A"):print("Tidak A");
+
+  //Function
+  print("Function");
+  
+  hitungNilai();
+  hitungNilai1(75,90);
+  var p = hitungNilai1(2, 50);
+  print(p);
+  var n = hitungNilai2(mapel1: 50, mapel2: 2);
+  print(n);
+  var o = hitungNilai3(79,100);
+}
+//Function
+  hitungNilai(){
+    print("hitung nilai");
+  }
+
+//positional argument
+ hitungNilai1(mapel1,mapel2, [mapel3]){
+   var nilaiAkhir;
+   if(mapel3 != null){
+     nilaiAkhir = mapel1 / mapel2 + mapel3;
+   }else{
+     nilaiAkhir = mapel1 / mapel2;
+   }
+  
+   return nilaiAkhir;
+  }
+
+//name argument
+  hitungNilai2({mapel1,mapel2}){
+    var nilaiAkhir;
+   if(mapel2 != null){
+     nilaiAkhir = mapel1 / mapel2;
+   }else{
+     nilaiAkhir = mapel1;
+   }
+  
+   return nilaiAkhir;
+  }
+
+  //void
+void hitungNilai3(mapel1, mapel2){
+  var nilaiAkhir = mapel1 + mapel2;
+   print(nilaiAkhir);
 }
